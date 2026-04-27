@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { Menu, Phone, Star, ChevronDown } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetClose } from '@/components/ui/sheet';
@@ -42,12 +43,15 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 lg:h-20">
         {/* Logo */}
-        <Link href="/" className="flex items-baseline gap-1" aria-label="Redline Roofing & Restoration home">
-          <span className="font-display text-2xl font-semibold tracking-tight text-slate-deep">
-            Redline
-          </span>
-          <span className="h-2 w-2 rounded-full bg-copper inline-block" aria-hidden="true" />
-          <span className="hidden text-sm text-slate-deep/60 sm:inline">Roofing &amp; Restoration</span>
+        <Link href="/" aria-label="Redline Roofing & Restoration home">
+          <Image
+            src="/logo.svg"
+            alt="Redline Roofing & Restoration"
+            width={200}
+            height={40}
+            priority
+            className="h-8 w-auto sm:h-10"
+          />
         </Link>
 
         {/* Desktop Nav */}

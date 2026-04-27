@@ -3,7 +3,7 @@ import { TrustBar } from '@/components/trust-bar';
 import { ServiceGrid } from '@/components/service-grid';
 import { WhyRedline } from '@/components/why-redline';
 import { InsuranceTeaser } from '@/components/insurance-teaser';
-import { ReviewsCarousel } from '@/components/reviews-carousel';
+import { ReviewsMarquee } from '@/components/reviews-marquee';
 import { FaqAccordion } from '@/components/faq-accordion';
 import { FinancingStrip } from '@/components/financing-strip';
 import { ServiceAreaMap } from '@/components/service-area-map';
@@ -97,15 +97,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 7. Reviews */}
-      <section className="py-20" aria-labelledby="reviews-heading">
-        <div className="mx-auto max-w-7xl px-4">
-          <h2 id="reviews-heading" className="mb-8 text-center">
-            1,612 OKC homeowners. 4.9 stars. Zero out-of-state subs.
-          </h2>
-          <ReviewsCarousel />
-        </div>
-      </section>
+      {/* 7. Reviews Marquee */}
+      <ReviewsMarquee />
 
       {/* 8. CTA + Lead Form */}
       <section id="lead-form-mid" className="bg-slate-deep py-20 text-white" aria-labelledby="cta-heading">
