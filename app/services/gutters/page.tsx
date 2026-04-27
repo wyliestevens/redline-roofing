@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import { Breadcrumbs } from '@/components/breadcrumbs';
 import { LeadForm } from '@/components/lead-form';
 import { FaqAccordion } from '@/components/faq-accordion';
@@ -93,9 +94,13 @@ export default function GuttersPage() {
           ]}
         />
 
-        <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
-          Gutters and downspouts in Oklahoma City.
-        </h1>
+        <div className="relative h-56 md:h-72 w-full overflow-hidden rounded-xl mb-8">
+          <Image src="/img/house-roof-1.jpg" alt="House with gutters and roofing in Oklahoma City" fill sizes="100vw" className="object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-deep/60 to-slate-deep/20" />
+          <div className="absolute inset-0 flex items-center px-8">
+            <h1 className="text-white font-display text-3xl font-bold sm:text-4xl lg:text-5xl drop-shadow-lg">Gutters and downspouts.</h1>
+          </div>
+        </div>
 
         <p className="mt-6 text-lg leading-relaxed">
           <strong>

@@ -116,11 +116,15 @@ export default function GalleryPage() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Breadcrumbs items={[{ name: 'Gallery', href: '/gallery' }]} />
 
-        <div className="max-w-3xl">
-          <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
-            Recent Oklahoma City roofing projects.
-          </h1>
+        <div className="relative h-56 md:h-72 w-full overflow-hidden rounded-xl mb-8">
+          <Image src="/img/aerial-roof.jpg" alt="Aerial view of a completed roofing project in Oklahoma City" fill sizes="100vw" className="object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-deep/60 to-slate-deep/20" />
+          <div className="absolute inset-0 flex items-center px-8">
+            <h1 className="text-white font-display text-3xl font-bold sm:text-4xl lg:text-5xl drop-shadow-lg">Recent Oklahoma City roofing projects.</h1>
+          </div>
+        </div>
 
+        <div className="max-w-3xl">
           <p className="mt-6 text-lg leading-relaxed text-slate-deep/80">
             Before-and-after photos from recent Redline installations across the OKC metro.
           </p>

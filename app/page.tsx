@@ -61,6 +61,12 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Photo band */}
+      <div className="relative h-64 md:h-80 w-full overflow-hidden">
+        <Image src="/img/roof-install.jpg" alt="Redline Roofing crew installing new shingles on an Oklahoma City home" fill sizes="100vw" className="object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-t from-cream to-transparent" />
+      </div>
+
       {/* 4. Why Redline */}
       <WhyRedline />
 

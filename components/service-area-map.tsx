@@ -1,11 +1,20 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { MapPin } from 'lucide-react';
 import { SITE } from '@/lib/site-config';
 
 export function ServiceAreaMap() {
   return (
-    <section className="py-20" aria-labelledby="service-areas-heading">
-      <div className="mx-auto max-w-7xl px-4">
+    <section className="relative py-20 overflow-hidden" aria-labelledby="service-areas-heading">
+      <Image
+        src="/img/neighborhood.jpg"
+        alt=""
+        fill
+        sizes="100vw"
+        className="object-cover opacity-10"
+        aria-hidden="true"
+      />
+      <div className="relative z-10 mx-auto max-w-7xl px-4">
         <div className="text-center mb-12">
           <h2 id="service-areas-heading">Serving the entire OKC metro.</h2>
           <p className="mt-3 text-slate-deep/70">

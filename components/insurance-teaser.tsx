@@ -33,12 +33,21 @@ export function InsuranceTeaser() {
 
           <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
             <Image
-              src="/img/insurance-case-edmond.jpg"
-              alt="Drone photo of hail-damaged roof in Wedgewood Estates, Edmond, alongside the Xactimate insurance estimate report"
+              src="/img/aerial-roof.jpg"
+              alt="Aerial drone photo of hail-damaged roof in Wedgewood Estates, Edmond"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
             />
+            <div className="absolute bottom-4 right-4 h-32 w-40 overflow-hidden rounded-lg border-4 border-white shadow-lg">
+              <Image
+                src="/img/inspector.jpg"
+                alt="Redline inspector documenting roof damage with clipboard"
+                fill
+                sizes="160px"
+                className="object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>

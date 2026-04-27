@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/breadcrumbs';
 import { Jsonld } from '@/components/jsonld';
@@ -97,9 +98,14 @@ export default function BlogPage() {
         <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
           <Breadcrumbs items={[{ name: 'Blog', href: '/blog' }]} />
 
-          <h1 className="font-display text-3xl font-bold tracking-tight text-slate-deep sm:text-4xl lg:text-5xl">
-            Oklahoma City roofing blog
-          </h1>
+          <div className="relative h-56 md:h-72 w-full overflow-hidden rounded-xl mb-8">
+            <Image src="/img/blueprints.jpg" alt="Roofing blueprints and planning documents" fill sizes="100vw" className="object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-r from-slate-deep/60 to-slate-deep/20" />
+            <div className="absolute inset-0 flex items-center px-8">
+              <h1 className="text-white font-display text-3xl font-bold sm:text-4xl lg:text-5xl drop-shadow-lg">Oklahoma City roofing blog.</h1>
+            </div>
+          </div>
+
           <p className="mt-4 max-w-2xl text-lg text-slate-deep/80">
             Straight talk on hail damage, insurance claims, roofing costs, and
             how to protect your home in the most hail-impacted metro in America.

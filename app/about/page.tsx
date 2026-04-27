@@ -103,9 +103,13 @@ export default function AboutPage() {
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <Breadcrumbs items={[{ name: 'About', href: '/about' }]} />
 
-        <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
-          Three generations of Oklahoma roofers.
-        </h1>
+        <div className="relative h-56 md:h-72 w-full overflow-hidden rounded-xl mb-8">
+          <Image src="/img/hero-crew.jpg" alt="Redline Roofing crew on a job site in Oklahoma City" fill sizes="100vw" className="object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-deep/60 to-slate-deep/20" />
+          <div className="absolute inset-0 flex items-center px-8">
+            <h1 className="text-white font-display text-3xl font-bold sm:text-4xl lg:text-5xl drop-shadow-lg">Three generations of Oklahoma roofers.</h1>
+          </div>
+        </div>
 
         <p className="mt-6 text-lg leading-relaxed text-slate-deep/80">
           Redline Roofing &amp; Restoration is not a franchise. It is not a private-equity rollup. It is a
@@ -113,6 +117,10 @@ export default function AboutPage() {
           Oklahoma City&rsquo;s most trusted roofing contractors — one roof, one handshake, one passed
           inspection at a time.
         </p>
+
+        <div className="relative h-48 md:h-60 w-full overflow-hidden rounded-xl mt-10">
+          <Image src="/img/handshake.jpg" alt="Handshake representing Redline Roofing values and trust" fill sizes="100vw" className="object-cover" />
+        </div>
 
         {/* ---------- Photo grid ---------- */}
         <div className="mt-12 grid gap-4 sm:grid-cols-2">
@@ -184,6 +192,9 @@ export default function AboutPage() {
 
         {/* ---------- Team ---------- */}
         <section className="mt-16 mb-16" aria-labelledby="team-heading">
+          <div className="relative h-48 md:h-60 w-full overflow-hidden rounded-xl mb-8">
+            <Image src="/img/construction-team.jpg" alt="Redline Roofing construction team working together" fill sizes="100vw" className="object-cover" />
+          </div>
           <h2 id="team-heading" className="font-display text-2xl font-bold sm:text-3xl">
             Meet the team
           </h2>

@@ -1,10 +1,19 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { SITE } from '@/lib/site-config';
 
 export function CtaBand() {
   return (
-    <section className="bg-copper py-16 text-white" aria-labelledby="cta-band-heading">
-      <div className="mx-auto max-w-4xl px-4 text-center">
+    <section className="relative bg-copper py-16 text-white overflow-hidden" aria-labelledby="cta-band-heading">
+      <Image
+        src="/img/roof-install.jpg"
+        alt=""
+        fill
+        sizes="100vw"
+        className="object-cover opacity-15"
+        aria-hidden="true"
+      />
+      <div className="relative z-10 mx-auto max-w-4xl px-4 text-center">
         <h2 id="cta-band-heading" className="text-white mb-4">
           Stop patching. Start protecting.
         </h2>

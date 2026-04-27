@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { MapPin } from 'lucide-react';
 import { Breadcrumbs } from '@/components/breadcrumbs';
@@ -45,9 +46,13 @@ export default function ServiceAreasPage() {
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <Breadcrumbs items={[{ name: 'Service Areas', href: '/service-areas' }]} />
 
-        <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
-          Roofing service areas across the Oklahoma City metro.
-        </h1>
+        <div className="relative h-56 md:h-72 w-full overflow-hidden rounded-xl mb-8">
+          <Image src="/img/neighborhood.jpg" alt="Oklahoma City neighborhood aerial view" fill sizes="100vw" className="object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-deep/60 to-slate-deep/20" />
+          <div className="absolute inset-0 flex items-center px-8">
+            <h1 className="text-white font-display text-3xl font-bold sm:text-4xl lg:text-5xl drop-shadow-lg">Roofing across the OKC metro.</h1>
+          </div>
+        </div>
 
         <p className="mt-6 max-w-3xl text-lg leading-relaxed text-slate-deep/80">
           Redline Roofing &amp; Restoration is headquartered in Oklahoma City and serves homeowners
