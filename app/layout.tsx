@@ -77,10 +77,10 @@ export default function RootLayout({
         <ChatbotContainer />
         <Toaster position="top-right" richColors />
         <Script
-          id="retell-widget"
-          src="https://retell-widget.example.com/widget.js"
-          data-agent-id="REPLACE_WITH_RETELL_AGENT_ID"
-          data-target="ai-chatbot-container"
+          id="ghl-chat-widget"
+          src="https://beta.leadconnectorhq.com/loader.js"
+          data-resources-url="https://beta.leadconnectorhq.com/chat-widget/loader.js"
+          data-widget-id="69f38380dfa79f8127ca818f"
           strategy="afterInteractive"
         />
       </body>
